@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+html,
+body {
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
+    background-attachment: fixed;
+    background-image: url("BG2.png");
+}
+
+li,
+a {
+    font-family: 'Merriweather', serif;
+    font-size: 16px;
+    display: inline;
+    text-decoration: none;
+    list-style: none;
+    color: #e6c2bf;
+    padding-right: 10px;
+}
+
+hr {
+    border: 1px solid #e6c2bf;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 1%;
+    overflow: hidden;
+}
+
+.top-header a:hover {
+    color: salmon;
+}
+.content b {
+    font-size: 100px;
+    font-family: 'Bebas Neue', cursive;
+    color: #f8efe4;
+    
+}
+.content {
+    padding-top: 10%;
+    text-align: left;
+    padding-left: 11%;
+    font-size: 50px;
+    color: #fad02c;
+    
+}
+@media screen and (max-width: 1090px){
+   .content b {
+       font-size: 95px;
+   }
+   .content {
+       font-size: 40px;
+   }
+}
+@media screen and (max-width: 757px) {
+    .content b {
+        font-size: 89px;
+    }
+}
+@media screen and (max-width: 500px) {
+    .content b {
+        font-size: 80px;
+    }
+    li, a {
+        font-size: 15px;
+        padding-right: 14px;
+    }
+    .logo {
+        width: 90%;
+    }
+}
+@media screen and (max-width: 375px) {
+    .content b {
+        font-size: 66px;
+    }
+    .content {
+        font-size: 30px;
+    }
+    li, a {
+        font-size: 14px;
+        padding-right: 14px;
+    }
+    .logo {
+        width: 70%;
+    }
+}

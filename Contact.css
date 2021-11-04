@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+html,
+body {
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
+    background-attachment: fixed;
+    background-image: url("BG4.png");
+}
+
+li,
+a {
+    font-family: 'Merriweather', serif;
+    font-size: 16px;
+    display: inline;
+    text-decoration: none;
+    list-style: none;
+    color: #e6c2bf;
+    padding-right: 10px;
+}
+
+hr {
+    border: 1px solid #e6c2bf;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 1%;
+    overflow: hidden;
+}
+
+.top-header a:hover {
+    color: salmon;
+}
+#contact-form{
+    box-sizing: border-box;
+    width: auto;
+    padding: 12px;
+    border: 1px solid #000;
+    border-radius: 10px;
+    resize: vertical;
+    background-color: #e6c2bf;
+}
+#contact-text{
+    text-align: center;
+    color: #fad02c;
+    font-family: 'Bebas Neue';
+    font-size: 40px;
+}
+#contact-message{
+    text-align: center;
+    color: #FEFDFE;
+    padding-bottom: 2%;
+    font-family: 'Merriweather', serif;
+}
+#contact-form label {
+    font-family: 'Merriweather', serif;
+    color: #282120;
+}
+#message-box{
+    padding: 100px;
+
+}
+#name {
+    margin-left: 30%;
+}
+#name-box{
+    margin-left: 10%;
+}
+#email {
+    margin-left: 30%;
+}
+#email-box{
+    margin-left: 9.5%;
+}
+#subject {
+    margin-left: 30%;
+}
+#sub-box{
+    margin-left: 8%;
+}
+#message {
+    margin-left: 30%;
+}
+#message-box{
+    margin-left: 7%;
+}
+#submit{
+    margin-left: 50%;
+}
+
+@media screen and (max-width:500px) {
+    li, a {
+        font-size: 14px;
+    }
+    .logo {
+        width:90%;
+    }
+}

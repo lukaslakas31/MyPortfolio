@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+html,
+body {
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
+    background-attachment: fixed;
+    background-image: url("BG.png");
+}
+
+li,
+a {
+    font-family: 'Merriweather', serif;
+    font-size: 16px;
+    display: inline;
+    text-decoration: none;
+    list-style: none;
+    color: #e6c2bf;
+    padding-right: 10px;
+}
+
+hr {
+    border: 1px solid #e6c2bf;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 1%;
+    overflow: hidden;
+}
+
+.top-header a:hover {
+    color: salmon;
+}
+
+#intro b {
+    font-size: 190px;
+    font-family: 'Bebas Neue', cursive;
+    color: #fad02c;
+}
+
+#intro {
+    padding-top: 6%;
+    text-align: left;
+    padding-left: 5%;
+    font-size: 50px;
+    color: #f8efe4;
+}
+
+#social img {
+    padding-right: 3%;
+    padding-left: 12%;
+}
+
+@media screen and (max-width: 1534px){
+    body {
+        background-image: url("1534_BG.png");
+    }
+}
+
+@media screen and (max-width: 1234px) {
+    body {
+        background-image: url("1234_BG.png");
+    }
+    #intro b {
+        font-size: 170px;
+    }
+    #intro {
+        font-size: 30px;
+    }
+    #social {
+        padding-top: 1%;
+        padding-right: 20%;
+    }
+}
+@media screen and (max-width: 946px) {
+    body {
+        background-image: url("946_BG.png");
+    }
+    #intro b {
+        font-size: 130px;
+    }
+    #intro {
+        font-size: 30px;
+    }
+    #social {
+        padding-top: 1%;
+        padding-right: 30%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        background-image: url("768_BG.png");
+    }
+    #intro b {
+        font-size: 130px;
+    }
+    #intro {
+        font-size: 30px;
+    }
+    #social {
+        padding-top: 1%;
+        padding-right: 20%;
+    }
+}
+@media screen and (max-width: 500px) {
+    body {
+        background-image: url("500_BG.png");
+    }
+    #intro b {
+        font-size: 80px;
+    }
+    #intro {
+        font-size: 30px;
+    }
+    #social {
+        padding-top: 1%;
+        padding-right: 10%;
+    }
+    li, a {
+        font-size: 13px;
+    }
+@media screen and (max-width: 375px) {
+    body {
+        background-image: url("375_BG.png");
+    }
+    .logo {
+        width: 90%;
+    }
+    #intro b {
+        font-size: 80px;
+    }
+    #intro {
+        font-size: 30px;
+    }
+    #social {
+        padding-top: 1%;
+        padding-right: 60%;
+    }
+    li, a {
+        font-size: 16px;
+    }
+}
+}

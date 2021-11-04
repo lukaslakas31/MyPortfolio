@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+html,
+body {
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
+    background-attachment: fixed;
+    background-image: url("BG3.png");
+}
+
+li,
+a {
+    font-family: 'Merriweather', serif;
+    font-size: 16px;
+    display: inline;
+    text-decoration: none;
+    list-style: none;
+    color: #e6c2bf;
+    padding-right: 10px;
+}
+
+hr {
+    border: 1px solid #e6c2bf;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 1%;
+    overflow: hidden;
+}
+
+.top-header a:hover {
+    color: salmon;
+}
+h1 {
+    font-family: 'Bebas Neue', cursive;
+    color: #f8efe4;
+    font-size: 90px;
+}
+.skillset{
+    width: 50%;
+    padding-top: 8%;
+    margin: 0 auto;
+  }
+  @keyframes load{
+    from {
+      width: 0%
+    }
+  }
+  @-webkit-keyframes load{
+    from {
+      width: 0%
+    }
+  }
+  @-moz-keyframes load{
+    from {
+      width: 0%
+    }
+  }
+  @-o-keyframes load{
+    from {
+      width: 0%
+    }
+  }
+  
+  .bar{
+    background-color: #f8efe4;
+    padding: 4px;
+    border-radius: 15px;
+    margin-bottom: 5px;
+    font-size: 20px;
+    color: #FFF;
+    font-weight: bold;
+    font-family: 'Merriweather', serif;
+    
+  }
+  .bar::before{
+    content:  attr(data-skill);
+    background-color: #f3b0ff;
+    display: inline-block;
+    padding: 5px 0 5px 10px;
+    border-radius: inherit;
+    animation: load 2s 0s;
+    -webkit-animation: load 2s 0s;
+    -moz-animation: load 2s 0s;
+    -o-animation: load 2s 0s;
+  }
+  
+  .bar.front::before{
+    background-color: #901910;
+  }
+  .bar.back::before{
+    background-color: #901910;
+  }
+  
+  .bar.basic::before{
+    width: calc(50% - 10px);
+  }
+  .bar.intermediate::before{
+    width: calc(20% - 10px);
+  }
+  .bar.advanced::before{
+    width: calc(50% - 10px);
+  }
+  .bar.expert::before{
+    width: calc(100% - 10px);
+  }
+
+  @media screen and (max-width:500px) {
+    .logo {
+      width:100%;
+    }
+    .skillset h1{
+      font-size: 100px;
+      padding-top: 40px;
+    }
+  }
+  
